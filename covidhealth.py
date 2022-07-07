@@ -33,7 +33,7 @@ if not st.sidebar.checkbox("Hide", True, key='1'):
         go.Bar(name='Active', x=df_new['State'][1:6], y=df_new['Active'][1:6])])
         st.plotly_chart(fig)
 # For this part, another dataset was used which contains the number of cases according to the date   
-df2 = pd.read_csv('/Users/noura/Desktop/case_time_series.csv')
+df2 = pd.read_csv('case_time_series.csv')
 df2['Date'] =  df2['Date'].astype('datetime64[ns]')
 # Configuring 2 options for the sidebar (Confirmed Cases and Recovered Cases) depending which one the user clicks
 select1 = st.sidebar.selectbox('Select', ['Confirmed Cases', 'Recovered Cases'], key='2')
