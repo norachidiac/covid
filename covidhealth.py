@@ -7,7 +7,7 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 # Importing Dataset
-df = pd.read_csv('/Users/noura/Desktop/state_wise.csv')
+df = pd.read_csv('state_wise.csv')
 df_new = df.sort_values(by="Confirmed", ascending=False)
 # Setting the title and sidebar title for the dashboard
 st.title("Covid-19 Dashboard For India")
